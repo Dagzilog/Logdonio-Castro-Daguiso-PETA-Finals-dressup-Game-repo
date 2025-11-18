@@ -30,13 +30,13 @@ namespace PetaGame.FashionApp
             Thread.Sleep(800);
             Console.WriteLine("1. Romel Louis S. Daguiso    (Developer/Programist");
             Thread.Sleep(800);
-            Console.WriteLine("Christian Warren Castro      (Document/Paperist)");
+            Console.WriteLine("2.Christian Warren Castro      (Document/Paperist)");
             Thread.Sleep(800);
-            Console.WriteLine("Dexter Logdonio      (Document/Paperist)");
+            Console.WriteLine("3.Dexter Logdonio      (Document/Paperist)");
             Thread.Sleep(800);
             Console.WriteLine("Thank you for playing our game!");
             Thread.Sleep(800);
-            Console.WriteLine("Held and taught by Sir Afan Lorenz Christopher");
+            Console.WriteLine("Held and taught by  Sir Afan Lorenz Christopher\n18/11/25 Dagz");
             Console.WriteLine("-----------------------------------------------");
         }
         public abstract void Exit();

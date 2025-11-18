@@ -12,4 +12,14 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DressUpGame\DressUpGame\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FashionDataBase_Fresh.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

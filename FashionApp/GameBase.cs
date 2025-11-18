@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace PetaGame.FashionApp
 {
+    
     public abstract class GameBase : IGameMenu
     {
+        protected string connectionString;
 
-        protected string playerName;
-
-        public GameBase(string name)
+        public GameBase(string dbConnectionString)
         {
-            playerName = name;
-            Console.WriteLine($"Welcome to our fashion dress change game, {playerName}!");
+            connectionString = dbConnectionString;
         }
 
-        public abstract void ShowMenu();
+        public abstract void StartGame();
         public abstract void NewGame();
+        public abstract void LoadGame();
         public abstract void CampaignMode();
-        public abstract void Picking();
+
         public virtual void Credits()
         {
             Console.WriteLine("--- Fashion Dress Up Game ---");
@@ -28,7 +28,7 @@ namespace PetaGame.FashionApp
             Thread.Sleep(800);
             Console.WriteLine("The Koolpals Developers");
             Thread.Sleep(800);
-            Console.WriteLine("1. Romel Louis S. Daguiso    (Developer/Programist");
+            Console.WriteLine("1. Romel Louis S. Daguiso    (Developer/Programist)");
             Thread.Sleep(800);
             Console.WriteLine("2.Christian Warren Castro      (Document/Paperist)");
             Thread.Sleep(800);
@@ -39,7 +39,12 @@ namespace PetaGame.FashionApp
             Console.WriteLine("Held and taught by  Sir Afan Lorenz Christopher\n18/11/25 Dagz");
             Console.WriteLine("-----------------------------------------------");
         }
-        public abstract void Exit();
+        public void ExitGame()
+        {
+            Console.WriteLine("Exiting game. Goodbye!");
+            Credits();
+            Environment.Exit(0);
+        }
     }
 
 }

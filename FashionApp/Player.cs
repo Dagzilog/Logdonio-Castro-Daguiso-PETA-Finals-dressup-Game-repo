@@ -8,26 +8,27 @@ namespace PetaGame.FashionApp
 {
     class Player : UserInput
     {
-        private Dictionary<string, string> options = new Dictionary<string, string>();
+        // Ensure Name is initialized to avoid converting null to non-nullable
+        public string Name { get; set; } = string.Empty;
+
+        private Dictionary<string, string> selections = new Dictionary<string, string>();
 
         public void SetOption(string key, string value)
         {
-            options[key] = value;
+            if (selections.ContainsKey(key))
+                selections[key] = value;
+            else
+                selections.Add(key, value);
         }
 
         public string GetOption(string key)
         {
-            return options.ContainsKey(key) ? options[key] : "Not Selected";
+            return selections.ContainsKey(key) ? selections[key] : "";
         }
 
-        public void ShowSelections()
+        public Dictionary<string, string> GetAllSelections()
         {
-            Console.WriteLine("\n--- Your Selections ---");
-            foreach (var kvp in options)
-            {
-                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
-            }
-            Console.WriteLine("----------------------\n");
+            return selections;
         }
     }
 }

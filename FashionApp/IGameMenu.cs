@@ -8,12 +8,12 @@ namespace PetaGame.FashionApp
 {
     public interface IGameMenu
     {
-        void ShowMenu();
+        void StartGame();
         void NewGame();
+        void LoadGame();
         void CampaignMode();
-        void Picking();
         void Credits();
-        void Exit();
+        void ExitGame();
     }
 }
 

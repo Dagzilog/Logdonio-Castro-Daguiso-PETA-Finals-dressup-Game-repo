@@ -32,7 +32,7 @@ namespace PetaGame.FashionApp
             Thread.Sleep(800);
             Console.WriteLine("2.Christian Warren Castro      (Document/Paperist)");
             Thread.Sleep(800);
-            Console.WriteLine("3.Dexter Logdonio      (Document/Paperist)");
+            Console.WriteLine("3.Dexter Logdonio      (Document/Paperist/Leader)");
             Thread.Sleep(800);
             Console.WriteLine("Thank you for playing our game!");
             Thread.Sleep(800);

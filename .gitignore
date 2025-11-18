@@ -1,0 +1,6 @@
+# Ignore Visual Studio temporary cache files
+.vs/
+
+# Ignore project build output (bin and obj folders)
+[Bb]in/
+[Oo]bj/

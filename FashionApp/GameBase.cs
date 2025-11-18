@@ -36,7 +36,8 @@ namespace PetaGame.FashionApp
             Thread.Sleep(800);
             Console.WriteLine("Thank you for playing our game!");
             Thread.Sleep(800);
-            Console.WriteLine("Held and thought by sir Kupal ser lorenz");
+            Console.WriteLine("Held and taught by Sir Afan Lorenz Christopher");
+            Console.WriteLine("-----------------------------------------------");
         }
         public abstract void Exit();
     }

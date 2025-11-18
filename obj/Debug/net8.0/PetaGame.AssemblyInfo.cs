@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetaGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e24f08e0cc49b6b1417178e3a92da2d0226e9cf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetaGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetaGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
